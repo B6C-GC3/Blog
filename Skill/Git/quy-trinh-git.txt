@@ -1,0 +1,24 @@
+I. Lần đầu
+- clone source trên git về
+-- với gitlab , chú ý mạng của công ty
+	git clone https:
+-- khi clone nếu lỗi ssh thì cần bắn key cho nó
+- checkout sang branch develop
+	git checkout develop
+-- cản thận chỉnh sửa mất develop và phải push lên trước hoặc merge branch bằng vsc
+- tạo branch của mình (chú ý là tạo từ đâu . có thể nhầm sang bran nhánh con của develop)
+	vd: git checkout -b namth
+- push branch của mình lên git
+	vd: git push origin namth
+- check trên git xem đã thành công chưa
+
+II. Lần thứ hai trở đi
+- chỉ làm việc trên nhánh của mình, không làm việc trên nhánh khác
+- trước khi code một tính năng mới phải pull code mới nhất từ develop về
+	git pull origin develop
+- coding công việc
+- sau khi làm xong phải commit lên nhánh của mình
+- pull code mới nhất từ develop về
+- xử lý conflig nếu có
+- nếu có thay đổi thì commit một lần nữa
+- lên github tạo pull request từ nhánh của mình vào develop
